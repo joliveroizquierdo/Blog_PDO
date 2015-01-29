@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Formulario para insertar usuarios</title>
+    <meta charset="utf-8">
   </head>
   <body>
 
@@ -18,9 +19,9 @@
       <input type="text" name="correo" value="">
 
       <label for="clave">Password</label>
-      <input type="text" name="clave" value="">
+      <input type="password" name="clave" value="">
 
-      <input type="submit" name="guardarUsuario" value="Gurdar datos">
+      <input type="submit" name="guardarUsuario" value="Guardar datos">
 
     </form>
 

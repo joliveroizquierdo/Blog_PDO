@@ -21,8 +21,8 @@
     }*/
 
     public function crearUsuario(){
-
-      $consulta = "INSERT INTO `usuarios` VALUES(null, ?, ?, ?, ?);";
+      //agreggarle la fecha de creacion del usuario
+      $consulta = "INSERT INTO `usuarios` VALUES(null, ?, ?, ?, ?, now());";
       $stmt = $this->con->prepare($consulta);
       $stmt->bindValue(1, $_POST['nombres'], PDO::PARAM_STR);
       $stmt->bindValue(2, $_POST['apellidos'], PDO::PARAM_STR);
