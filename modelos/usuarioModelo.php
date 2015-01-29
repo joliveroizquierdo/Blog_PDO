@@ -19,8 +19,8 @@
       return $stmt->fetchAll(PDO::FETCH_ASSOC);
       //el valor entre los corches creo que es inncesario, ya que es e lvalor por defecto
     }*/
-    /*
-    public function insertarUsuarios(){
+
+    public function crearUsuario(){
 
       $consulta = "INSERT INTO `usuarios` VALUES(null, ?, ?, ?, ?);";
       $stmt = $this->con->prepare($consulta);
@@ -33,12 +33,7 @@
       //header("Location: noticias.php?m=1");
 
     }
-    */
-    public function saludo(){
 
-      echo 'saludos desde el modelo';
-
-    }
   }
 
 ?>
